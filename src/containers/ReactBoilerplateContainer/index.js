@@ -3,9 +3,11 @@ import styles from './styles.module.scss';
 import Button from 'components/Button';
 import { increaseProductsQuantity } from '../../services/products/product-quantity/actions';
 import { connect } from 'react-redux';
+import MainMenu from 'components/MainMenu';
 
 const ReactBoilerPlateContainer = ({ productQuantity, increaseProductQuantity }) => (
   <div className={styles.container}>
+    <MainMenu />
     <div className={styles.heading}>
       React Boilerplate: {productQuantity}
     </div>

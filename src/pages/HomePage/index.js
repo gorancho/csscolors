@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './styles.module.scss';
-import ReactBoilerPlateContainer from 'containers/ReactBoilerplateContainer';
+import MainMenu from 'components/MainMenu';
 
 const HomePage = () => (
   <div className={styles['home-page']}>
-    <ReactBoilerPlateContainer />
+    <MainMenu />
   </div>
 );
 
