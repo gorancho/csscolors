@@ -1,0 +1,46 @@
+@import "~global/styles";
+
+$activeColor: #e91e63;
+
+.main {
+  max-width: 60px;
+  height: 100%;
+  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.4);
+  transition: max-width 0.2s ease-in-out;
+
+  &.enlarged {
+    max-width: 220px;
+  }
+
+  .icons {
+    display: grid;
+    grid-row-gap: 10px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+
+    .icon {
+      cursor: pointer;
+  
+      .label {
+        float: left;
+        padding: 10px;
+        position: absolute;
+        white-space: nowrap;
+  
+        &.active {
+          color: $activeColor;
+        }
+      }
+
+      &:hover {
+        color: $activeColor;
+
+        svg path {
+          fill: $activeColor;
+        }
+      }
+    }
+
+  }
+}
